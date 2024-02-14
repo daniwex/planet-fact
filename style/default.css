@@ -8,6 +8,7 @@ body{
     background-color: #070625;
     color: white;
     font-family: 'League Spartan',sans-serif,'Antonio';
+    height: 100%;
 }
 :root{
     --data-cursor: attr(data-cursor)
