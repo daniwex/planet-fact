@@ -167,7 +167,7 @@ nav ul li a{
     display: none;
 }
 /* Styles for screens smaller than or equal to 600px */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body,html{
         height: 100vh ;
         /* min-width: 600px; */
