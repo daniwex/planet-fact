@@ -24,11 +24,7 @@ planetModes.forEach((element) => {
   element.addEventListener("click", (e) => {
     removeClass(planetModes, classname);
     element.classList.add(classname);
-    if (window.innerWidth <= 600) {
-      test = e.target.innerText.slice().toLowerCase();
-    } else {
-      test = e.target.innerText.slice(3).toLowerCase();
-    }
+    test = element.children[1].innerText.slice().toLowerCase();
     if (test == "internal structure" || test == "structure") {
       let el = planetText.filter((element) => element.dataset.item == "2")[0];
       addClassFormatted(planetText, "hidden", el);

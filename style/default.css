@@ -89,6 +89,7 @@ nav ul li a{
     cursor: pointer;
     text-transform: uppercase;
 }
+
 .planet-modes div:not([class^='active']):hover{
     background-color: #d8d8d879;
 }
