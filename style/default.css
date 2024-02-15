@@ -8,7 +8,7 @@ body{
     background-color: #070625;
     color: white;
     font-family: 'League Spartan',sans-serif,'Antonio';
-    height: 100%;
+    min-height: 100vh;
 }
 :root{
     --data-cursor: attr(data-cursor)
@@ -135,6 +135,7 @@ nav ul li a{
     grid-template-columns: repeat(4,250px);
     column-gap: 20px;
     place-content: center;
+    padding: clamp(30px,40px,70px) 0;
 }
 .planet-science .block{
     display: flex;
