@@ -48,6 +48,9 @@ planetModes.forEach((element) => {
       addClassFormatted(planetText, "hidden", el);
       planetImage[0].src = `./assets/planet-${planetName}.svg`;
       let parent = planetImage[0].parentElement;
+      if(parent.children.length > 1){
+        return
+      }
       let image = document.createElement("img");
       let properties = {
         position: "absolute",
