@@ -216,7 +216,7 @@ nav ul li a{
         height: 100px;
     }
     .planet-modes{
-        position: absolute;
+        /* position: absolute; */
         display: grid;
         grid-template-columns: repeat(3,80px);
         top: 0 !important;
