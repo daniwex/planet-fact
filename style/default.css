@@ -172,8 +172,8 @@ nav ul li a{
 /* Styles for screens smaller than or equal to 600px */
 @media (max-width: 700px) {
     body,html{
-        height: 100vh ;
-        /* min-width: 600px; */
+        /* height: 100vh ; */
+        height: 100%;
     }
     .open-nav{
         display: block;
@@ -196,12 +196,15 @@ nav ul li a{
         border-bottom: 1px solid rgba(255, 255, 255, 0.374);
     }
     .nav-list{
-        position: fixed;
+        position: absolute;
         left: 0;
         right: 0;
         /* width: 100%; */
-        min-height: 120vh;
+        height: 100vh;
+        overflow: hidden;
+        background-color: red;
         z-index: 2;
+        display: none;
     }
     .planet-descrip{
         display: unset;
@@ -212,7 +215,6 @@ nav ul li a{
         display: grid;
         grid-template-columns: repeat(3,80px);
         top: 0;
-        left: 0;
         width: 100%;
         column-gap: 20%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.374);
@@ -224,7 +226,7 @@ nav ul li a{
     .planet-modes div.planet-mode{
         border: unset;
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1rem;
         /* width: fit-content; */
         padding: 10px 0;
         margin-bottom: 0 ;
