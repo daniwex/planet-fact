@@ -209,12 +209,17 @@ nav ul li a{
     .planet-descrip{
         display: unset;
         position: relative;
+        background-color: red;
+    }
+    .planet-info{
+        position: unset;
+        height: 100px;
     }
     .planet-modes{
         position: absolute;
         display: grid;
         grid-template-columns: repeat(3,80px);
-        top: 0;
+        top: 0 !important;
         width: 100%;
         column-gap: 20%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.374);
@@ -222,6 +227,7 @@ nav ul li a{
     }
     .planet-details{
         width: 100%;
+        position: unset;
     }
     .planet-modes div.planet-mode{
         border: unset;
@@ -280,7 +286,7 @@ nav ul li a{
         display: none;
     }
     .planet-image{
-        margin-top: 40%;
+        margin-top: calc(50vh - 60%);
         margin-bottom: 25%;
     }
     .planet-name{
@@ -315,5 +321,8 @@ nav ul li a{
     }
     .planet-science .block span{
         font-size: 1em;
+    }
+    .desktop{
+        display: hidden;
     }
 }
