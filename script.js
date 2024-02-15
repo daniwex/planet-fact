@@ -67,8 +67,8 @@ planetModes.forEach((element) => {
       image.style.bottom = properties.bottom;
       image.style.transform =
         planetName == "saturn"
-          ? "translateX(-50%) translateY(10%)"
-          : "translateX(-50%) translateY(40%)";
+          ? "translateX(-50%) translateY(clamp(-100%,-25%, 80%))"
+          : "translateX(-50%) translateY(-50%)";
       parent.appendChild(image);
     }
   });

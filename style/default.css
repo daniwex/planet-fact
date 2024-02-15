@@ -287,12 +287,16 @@ nav ul li a{
         display: none;
     }
     .planet-image{
-        margin-top: 40%;
-        margin-bottom: 25%;
-        padding: 50px;
+        margin-top: 35%;
+        margin-bottom: 10%;
+        width: 100vw;
+        padding: 30px;
+        height: 200px;
     }
-    .planet-image img{
-        width: 95%;
+    .planet-image img:first-of-type{
+        width: 80%;
+        height: 80%;
+        position: relative;
     }
     .planet-name{
         padding-bottom: 20px;
@@ -308,11 +312,13 @@ nav ul li a{
     .planet-text .text{
         padding: 0 20px;
         text-align: center;
+        line-height: 1.5rem;
     }
     .planet-science{
         display: flex;
         flex-direction: column;
         padding: 20px;
+        margin-top: 10%;
     }
     .planet-modes div:not([class^='active']):hover{
         background-color: unset;
