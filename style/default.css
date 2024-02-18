@@ -10,7 +10,9 @@ body {
   background-color: #070625;
   color: white;
   font-family: "League Spartan", sans-serif, "Antonio";
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 :root {
   --data-cursor: attr(data-cursor);
@@ -20,6 +22,7 @@ a {
 }
 nav {
   display: flex;
+  flex-basis: 5%;
   height: 60px;
   align-items: center;
   justify-content: space-between;
@@ -48,11 +51,12 @@ nav ul li a {
   display: flex;
   height: 570px;
   align-items: center;
+  flex-basis: 60%;
 }
 .planet-info {
   flex-basis: 40%;
   display: flex;
-  padding: 10px 40px;
+  padding: 40px 40px;
 }
 .planet-image {
   flex-basis: 55%;
@@ -61,7 +65,8 @@ nav ul li a {
   position: relative;
 }
 .planet-image img {
-  width: 45%;
+  max-width: 50%;
+  height: auto;
   user-select: none;
 }
 .planet-name {
@@ -136,10 +141,11 @@ nav ul li a {
 }
 .planet-science {
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(4, calc((100vw / 6 - 3rem)));
   column-gap: 20px;
   place-content: center;
   padding: clamp(30px, 40px, 70px) 0;
+  flex-basis: 35%;
 }
 .planet-science .block {
   display: flex;
@@ -179,6 +185,7 @@ nav ul li a {
   html {
     /* height: 100vh ; */
     height: 100%;
+    position: relative;
   }
   .open-nav {
     display: block;
@@ -187,15 +194,15 @@ nav ul li a {
   }
   nav {
     position: fixed;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     padding: unset;
     left: 0;
-    left: 0;
-    height: 100vh;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
     width: 100%;
-    overflow: hidden;
-    z-index: 2;
+    overflow-x: hidden;
     background-color: #070724;
   }
   nav ul {
@@ -303,11 +310,6 @@ nav ul li a {
     padding: 30px;
     height: 200px;
   }
-  .planet-image img:first-of-type {
-    width: 80%;
-    height: 80%;
-    position: relative;
-  }
   .planet-name {
     padding-bottom: 20px;
     text-align: center;
@@ -329,6 +331,7 @@ nav ul li a {
     flex-direction: column;
     padding: 20px;
     margin-top: 1rem;
+    background-color: red;
   }
   .planet-modes div:not([class^="active"]):hover {
     background-color: unset;
