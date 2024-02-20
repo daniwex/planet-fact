@@ -173,6 +173,9 @@ nav ul li a {
   height: 170px;
   width: 400px;
 }
+.planet-text .text{
+padding-top: 1.1rem;
+}
 .hidden {
   display: none;
 }
