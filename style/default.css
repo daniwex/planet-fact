@@ -305,8 +305,9 @@ padding-top: 1.1rem;
   .planet-science {
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
-    margin-top: calc(23%)
+    padding: 20px;
+    margin-top: calc(23%);
+    background-color:red;
   }
   .planet-modes div:not([class^="active"]):hover {
     background-color: unset;
