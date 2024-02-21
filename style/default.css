@@ -195,7 +195,7 @@ nav ul li a {
   margin-bottom: 10px;
 }
 
-.planet-science .block span+span {
+.planet-science .block span + span {
   font-size: 1.2rem;
   font-weight: medium;
   font-family: "Antonio", sans-serif;
@@ -225,11 +225,11 @@ nav ul li a {
   display: none;
 }
 
-[class*='mobile'] {
+[class*="mobile"] {
   display: none;
 }
 
-[class*='desktop'] {
+[class*="desktop"] {
   display: block;
 }
 
@@ -239,24 +239,27 @@ nav ul li a {
   html {
     position: relative;
     overflow-x: hidden;
+    overflow-y:initial;
+    height: 100vh;
   }
 
-  [class*='mobile'] {
+  [class*="mobile"] {
     display: flex;
   }
 
-  [class*='desktop'] {
+  [class*="desktop"] {
     display: none !important;
   }
 
   .mobile-nav {
     display: block;
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100vw;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
     background-color: #070625;
     z-index: 3;
   }
@@ -276,8 +279,7 @@ nav ul li a {
     padding: 0 20px;
     height: 60px;
     width: 100%;
-    border-bottom: .8px solid rgba(255, 255, 255, 0.179);
-
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.179);
   }
 
   .open-nav {
@@ -289,10 +291,10 @@ nav ul li a {
     height: 100%;
     width: 100%;
   }
-#close-btn{
-  font-size: 3rem;
-  color: white;
-}
+  #close-btn {
+    font-size: 3rem;
+    color: white;
+  }
   .mobile-nav-items {
     display: flex;
     padding: 20px;
@@ -306,9 +308,8 @@ nav ul li a {
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.219);
   }
-  .mobile-nav-items li:not(:first-of-type){
+  .mobile-nav-items li:not(:first-of-type) {
     margin: 10px 0;
-
   }
 
   .planet-descrip {
@@ -415,7 +416,7 @@ nav ul li a {
   }
 
   .planet-image img {
-    max-width: 100%;
+    max-width: 80%;
     height: 70%;
   }
 
@@ -457,7 +458,7 @@ nav ul li a {
   }
 
   .planet-science .block span:first-child {
-    font-size: .65rem;
+    font-size: 0.65rem;
   }
 
   .planet-science .block span:last-of-type {
@@ -472,8 +473,8 @@ nav ul li a {
     margin-left: 12%;
   }
 
-  li[data-nav-item='mercury']::after {
-    content: '';
+  li[data-nav-item="mercury"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -484,8 +485,8 @@ nav ul li a {
     background-color: #419ebb;
   }
 
-  li[data-nav-item='venus']::after {
-    content: '';
+  li[data-nav-item="venus"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -496,8 +497,8 @@ nav ul li a {
     background-color: #eda249;
   }
 
-  li[data-nav-item='earth']::after {
-    content: '';
+  li[data-nav-item="earth"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -508,8 +509,8 @@ nav ul li a {
     background-color: #6d2ed5;
   }
 
-  li[data-nav-item='mars']::after {
-    content: '';
+  li[data-nav-item="mars"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -520,8 +521,8 @@ nav ul li a {
     background-color: #d14c32;
   }
 
-  li[data-nav-item='jupiter']::after {
-    content: '';
+  li[data-nav-item="jupiter"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -532,8 +533,8 @@ nav ul li a {
     background-color: #d83a34;
   }
 
-  li[data-nav-item='saturn']::after {
-    content: '';
+  li[data-nav-item="saturn"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -544,8 +545,8 @@ nav ul li a {
     background-color: #cd5120;
   }
 
-  li[data-nav-item='uranus']::after {
-    content: '';
+  li[data-nav-item="uranus"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -556,8 +557,8 @@ nav ul li a {
     background-color: #1ec1a2;
   }
 
-  li[data-nav-item='neptune']::after {
-    content: '';
+  li[data-nav-item="neptune"]::after {
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -570,9 +571,7 @@ nav ul li a {
 }
 
 @media (max-width: 290px) {
-
   .planet-science {
     margin-top: 30%;
   }
-
 }
