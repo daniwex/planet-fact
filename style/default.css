@@ -159,7 +159,7 @@ nav ul li a {
   margin-bottom: 10px;
 }
 .planet-science .block span + span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: medium;
   font-family: "Antonio", sans-serif;
 }
@@ -186,12 +186,9 @@ padding-top: 1.1rem;
 @media (max-width: 700px) {
   body,
   html {
-    /* height: 100vh ; */
-    /* height: 100%; */
     position: relative;
-    overflow-y:inherit;
     min-height: 100%;
-
+    overflow-x: hidden;
   }
   .open-nav {
     display: block;
@@ -211,7 +208,7 @@ padding-top: 1.1rem;
   .planet-modes {
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(3, minmax(20px,80px));
     top: 0;
     width: 100%;
     column-gap: 20%;
@@ -308,8 +305,8 @@ padding-top: 1.1rem;
   .planet-science {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin-top: 1rem;
+    padding: 40px 20px;
+    margin-top: calc(23%)
   }
   .planet-modes div:not([class^="active"]):hover {
     background-color: unset;
@@ -321,8 +318,11 @@ padding-top: 1.1rem;
     align-items: center;
     margin-bottom: 10px;
   }
-  .planet-science .block span {
-    font-size: 1em;
+  .planet-science .block span:first-child {
+    font-size: .65rem;
+  }
+  .planet-science .block span:last-of-type {
+    font-size: 1rem;
   }
   .desktop {
     display: hidden;
