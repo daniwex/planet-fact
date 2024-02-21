@@ -20,7 +20,7 @@
     <title>Frontend Mentor | Planets fact site</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="desktop-nav">
       <div class="container">
         <div class="title">THE PLANETS</div>
         <button class="open-nav">
@@ -37,6 +37,29 @@
           <li class="nav-links"><a href="./saturn.html">SATURN</a></li>
           <li class="nav-links"><a href="javascript:void()">URANUS</a></li>
           <li class="nav-links"><a href="./neptune.html">NEPTUNE</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="mobile-nav">
+      <div class="title">THE PLANETS</div>
+      <button class="open-nav" id="open-nav">
+        <img src="./assets/icon-hamburger.svg" alt="" />
+      </button>
+      <div class="mobile-nav-list">
+        <ul class="mobile-nav-items">
+          <li class="mobile-nav-links" data-nav-item="mercury">
+            <a class="active" href="javascript:void()">MERCURY</a>
+          </li>
+          <li data-cursor="./assets/planet-mercury.svg" class="nav-links" data-nav-item="venus">
+            <a href="./venus.html">VENUS</a>
+          </li>
+          <li class="nav-links" data-nav-item="earth"><a href="./earth.html">EARTH</a></li>
+          <li class="nav-links" data-nav-item="mars"><a href="./mars.html">MARS</a></li>
+          <li class="nav-links" data-nav-item="jupiter"><a href="./jupiter.html">JUPITER</a></li>
+          <li class="nav-links" data-nav-item="saturn"><a href="./saturn.html">SATURN</a></li>
+          <li class="nav-links" data-nav-item="uranus"><a href="./uranus.html">URANUS</a></li>
+          <li class="nav-links" data-nav-item="neptune"><a href="./neptune.html">NEPTUNE</a></li>
         </ul>
       </div>
     </nav>

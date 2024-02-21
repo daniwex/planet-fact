@@ -1,3 +1,12 @@
+let mobileNav = document.querySelector('.mobile-nav-list')
+let openbtn = document.getElementById('open-nav')
+console.log(openbtn)
+mobileNav.style.display = "none"
+openbtn.addEventListener('click', ()=>{
+  mobileNav.style.display = "block"
+  console.log(true)
+})
+
 let planetModes = Array.from(document.querySelectorAll(".planet-mode"));
 let planetText = Array.from(
   document.querySelectorAll(".planet-text")[0].children
@@ -90,3 +99,4 @@ function addClassFormatted(array, classname, element) {
     }
   }
 }
+
