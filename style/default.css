@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body,html {
   padding: 0;
   margin: 0;
   background-image: url(../assets/background-stars.svg);
@@ -235,12 +235,11 @@ nav ul li a {
 
 /* Styles for screens smaller than or equal to 600px */
 @media (max-width: 700px) {
-  body,
-  html {
+  body,html {
     position: relative;
     overflow-x: hidden;
     overflow-y:initial;
-    height: 100vh;
+    width: 100vw;
   }
 
   [class*="mobile"] {
