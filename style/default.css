@@ -187,7 +187,6 @@ padding-top: 1.1rem;
   body,
   html {
     position: relative;
-    min-height: 100%;
     overflow-x: hidden;
   }
   .open-nav {
@@ -279,7 +278,6 @@ padding-top: 1.1rem;
     margin-top: 35%;
     margin-bottom: 10%;
     width: 100vw;
-    /* padding: 30px; */
     height: fit-content;
     align-items:center;
   }
@@ -306,8 +304,7 @@ padding-top: 1.1rem;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-top: calc(23%);
-    background-color:red;
+    margin-top: calc(27%);
   }
   .planet-modes div:not([class^="active"]):hover {
     background-color: unset;
