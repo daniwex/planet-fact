@@ -1,8 +1,12 @@
 let mobileNav = document.querySelector('.mobile-nav')
 let openbtn = document.getElementById('open-nav')
+let closebtn = document.getElementById('close-btn')
 mobileNav.style.display = "none"
 openbtn.addEventListener('click', ()=>{
   mobileNav.style.display = "block"
+})
+closebtn.addEventListener('click', ()=>{
+  mobileNav.style.display = "none"
 })
 
 let planetModes = Array.from(document.querySelectorAll(".planet-mode"));

@@ -11,7 +11,7 @@ body {
   background-color: #070625;
   color: white;
   font-family: "League Spartan", sans-serif, "Antonio";
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -235,7 +235,6 @@ nav ul li a {
 
 /* Styles for screens smaller than or equal to 600px */
 @media (max-width: 700px) {
-
   body,
   html {
     position: relative;
@@ -252,11 +251,12 @@ nav ul li a {
 
   .mobile-nav {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100%;
+    overflow: hidden;
     background-color: #070625;
     z-index: 3;
   }
@@ -266,6 +266,7 @@ nav ul li a {
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.374);
+    font-size: 1.5rem;
   }
 
   .nav-container {
@@ -275,6 +276,8 @@ nav ul li a {
     padding: 0 20px;
     height: 60px;
     width: 100%;
+    border-bottom: .8px solid rgba(255, 255, 255, 0.179);
+
   }
 
   .open-nav {
@@ -282,25 +285,30 @@ nav ul li a {
     background-color: transparent;
     border: none;
   }
-
   .mobile-nav-list {
     height: 100%;
     width: 100%;
-
   }
-
+#close-btn{
+  font-size: 3rem;
+  color: white;
+}
   .mobile-nav-items {
     display: flex;
     padding: 20px;
     flex-direction: column;
+    margin: 0;
   }
 
   .mobile-nav-items li {
     display: block;
     width: calc(100vw - 40px);
-    margin: 10px 0;
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+  }
+  .mobile-nav-items li:not(:first-of-type){
+    margin: 10px 0;
+
   }
 
   .planet-descrip {
