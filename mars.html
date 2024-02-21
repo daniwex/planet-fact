@@ -1,151 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/default.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./script.js" defer></script>
-    <title>Frontend Mentor | Planets fact site</title>
-  </head>
-  <body>
-    <nav class="desktop-nav">
-      <div class="container">
-        <div class="title">THE PLANETS</div>
-      </div>
-      <div class="nav-list">
-        <ul class="nav-items">
-          <li class="nav-links"><a href="./index.html">MERCURY</a></li>
-          <li class="nav-links"><a href="./venus.html">VENUS</a></li>
-          <li class="nav-links"><a href="./earth.html">EARTH</a></li>
-          <li class="nav-links"><a href="javascript:void()">MARS</a></li>
-          <li class="nav-links"><a href="./jupiter.html">JUPITER</a></li>
-          <li class="nav-links"><a href="./saturn.html">SATURN</a></li>
-          <li class="nav-links"><a href="./uranus.html">URANUS</a></li>
-          <li class="nav-links"><a href="./neptune.html">NEPTUNE</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <nav class="mobile-nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/default.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Planets fact site</title>
+</head>
+
+<body>
+  <nav class="desktop-nav">
+    <div class="title">THE PLANETS</div>
+    <div class="nav-list">
+      <ul class="nav-items">
+        <li class="nav-links"><a href="./index.html">MERCURY</a></li>
+        <li class="nav-links"><a href="./venus.html">VENUS</a></li>
+        <li class="nav-links"><a href="./earth.html">EARTH</a></li>
+        <li class="nav-links"><a href="javascript:void()">MARS</a></li>
+        <li class="nav-links"><a href="./jupiter.html">JUPITER</a></li>
+        <li class="nav-links"><a href="./saturn.html">SATURN</a></li>
+        <li class="nav-links"><a href="./uranus.html">URANUS</a></li>
+        <li class="nav-links"><a href="./neptune.html">NEPTUNE</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="mobile-nav-header">
       <div class="title">THE PLANETS</div>
       <button class="open-nav" id="open-nav">
         <img src="./assets/icon-hamburger.svg" alt="" />
       </button>
-      <div class="mobile-nav-list">
-        <ul class="mobile-nav-items">
-          <li class="mobile-nav-links" data-nav-item="mercury">
-            <a class="active" href="javascript:void()">MERCURY</a>
-          </li>
-          <li data-cursor="./assets/planet-mercury.svg" class="nav-links" data-nav-item="venus">
-            <a href="./venus.html">VENUS</a>
-          </li>
-          <li class="nav-links" data-nav-item="earth"><a href="./earth.html">EARTH</a></li>
-          <li class="nav-links" data-nav-item="mars"><a href="./mars.html">MARS</a></li>
-          <li class="nav-links" data-nav-item="jupiter"><a href="./jupiter.html">JUPITER</a></li>
-          <li class="nav-links" data-nav-item="saturn"><a href="./saturn.html">SATURN</a></li>
-          <li class="nav-links" data-nav-item="uranus"><a href="./uranus.html">URANUS</a></li>
-          <li class="nav-links" data-nav-item="neptune"><a href="./neptune.html">NEPTUNE</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="planet-descrip">
-      <div class="planet-image">
-        <img src="./assets/planet-mars.svg" alt="" />
-      </div>
-      <div class="planet-info">
-        <div>
-          <span class="planet-name">Mars</span>
-          <div class="planet-details">
-            <div class="planet-text">
-              <div class="text" data-item="1">
-                Mars is the fourth planet from the Sun and the second-smallest
-                planet in the Solar System, being larger than only Mercury. In
-                English, Mars carries the name of the Roman god of war and is
-                often referred to as the "Red Planet"
-                <span class="wiki">Source : Wikipedia</span>
-              </div>
-              <div class="text hidden" data-item="2">
-                Like Earth, Mars has differentiated into a dense metallic core
-                overlaid by less dense materials. Scientists initially
-                determined that the core is at least partially liquid. Current
-                models of its interior imply a core consisting primarily of iron
-                and nickel with about 16–17% sulfur.
-                <span class="wiki">Source : Wikipedia</span>
-              </div>
-              <div class="text hidden" data-item="3">
-                Mars is a terrestrial planet whose surface consists of minerals
-                containing silicon and oxygen, metals, and other elements that
-                typically make up rock. The surface is primarily composed of
-                tholeiitic basalt, although parts are more silica-rich than
-                typical basalt.
-                <span class="wiki">Source : Wikipedia</span>
-              </div>
+  </header>
+
+  <nav class="mobile-nav">
+    <div class="nav-container">
+      <div class="title">THE PLANETS</div>
+      <button class="open-nav">
+        <img src="./assets/icon-hamburger.svg" alt="" />
+      </button>
+    </div>
+    <div class="mobile-nav-list">
+      <ul class="mobile-nav-items">
+        <li class="mobile-nav-links" data-nav-item="mercury">
+          <a class="active" href="javascript:void()">MERCURY</a>
+        </li>
+        <li data-cursor="./assets/planet-mercury.svg" class="nav-links" data-nav-item="venus">
+          <a href="./venus.html">VENUS</a>
+        </li>
+        <li class="nav-links" data-nav-item="earth"><a href="./earth.html">EARTH</a></li>
+        <li class="nav-links" data-nav-item="mars"><a href="./mars.html">MARS</a></li>
+        <li class="nav-links" data-nav-item="jupiter"><a href="./jupiter.html">JUPITER</a></li>
+        <li class="nav-links" data-nav-item="saturn"><a href="./saturn.html">SATURN</a></li>
+        <li class="nav-links" data-nav-item="uranus"><a href="./uranus.html">URANUS</a></li>
+        <li class="nav-links" data-nav-item="neptune"><a href="./neptune.html">NEPTUNE</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="planet-descrip">
+    <div class="planet-image">
+      <img src="./assets/planet-mars.svg" alt="" />
+    </div>
+    <div class="planet-info">
+      <div>
+        <span class="planet-name">Mars</span>
+        <div class="planet-details">
+          <div class="planet-text">
+            <div class="text" data-item="1">
+              Mars is the fourth planet from the Sun and the second-smallest
+              planet in the Solar System, being larger than only Mercury. In
+              English, Mars carries the name of the Roman god of war and is
+              often referred to as the "Red Planet"
+              <span class="wiki">Source : Wikipedia</span>
             </div>
-            <!-- Overview Content Start -->
-
-            <!-- URL: https://en.wikipedia.org/wiki/Mars -->
-
-            <!-- Overview Content End -->
-            <div class="planet-modes">
-              <div class="active-mars planet-mode">
-                <span class="number">01</span><span>Overview</span>
-              </div>
-              <div class="planet-mode">
-                <span class="number">02</span><span>Internal Structure</span>
-              </div>
-              <div class="planet-mode">
-                <span class="number">03</span><span>Surface Geology</span>
-              </div>
+            <div class="text hidden" data-item="2">
+              Like Earth, Mars has differentiated into a dense metallic core
+              overlaid by less dense materials. Scientists initially
+              determined that the core is at least partially liquid. Current
+              models of its interior imply a core consisting primarily of iron
+              and nickel with about 16–17% sulfur.
+              <span class="wiki">Source : Wikipedia</span>
+            </div>
+            <div class="text hidden" data-item="3">
+              Mars is a terrestrial planet whose surface consists of minerals
+              containing silicon and oxygen, metals, and other elements that
+              typically make up rock. The surface is primarily composed of
+              tholeiitic basalt, although parts are more silica-rich than
+              typical basalt.
+              <span class="wiki">Source : Wikipedia</span>
             </div>
           </div>
-
           <!-- Overview Content Start -->
 
+          <!-- URL: https://en.wikipedia.org/wiki/Mars -->
+
           <!-- Overview Content End -->
+          <div class="planet-modes">
+            <div class="active-mars planet-mode">
+              <span class="number">01</span><span>Overview</span>
+            </div>
+            <div class="planet-mode">
+              <span class="number">02</span><span>Internal Structure</span>
+            </div>
+            <div class="planet-mode">
+              <span class="number">03</span><span>Surface Geology</span>
+            </div>
+          </div>
+        </div>
 
-          <!-- Internal Structure Content Start -->
+        <!-- Overview Content Start -->
 
-          <!-- Like Earth, Mars has differentiated into a dense metallic core
+        <!-- Overview Content End -->
+
+        <!-- Internal Structure Content Start -->
+
+        <!-- Like Earth, Mars has differentiated into a dense metallic core
           overlaid by less dense materials. Scientists initially determined that
           the core is at least partially liquid. Current models of its interior
           imply a core consisting primarily of iron and nickel with about 16–17%
           sulfur. Source : Wikipedia -->
-          <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
+        <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
 
-          <!-- Internal Structure Content End -->
+        <!-- Internal Structure Content End -->
 
-          <!-- Surface Geology Content Start -->
+        <!-- Surface Geology Content Start -->
 
-          <!-- Mars is a terrestrial planet whose surface consists of minerals
+        <!-- Mars is a terrestrial planet whose surface consists of minerals
           containing silicon and oxygen, metals, and other elements that
           typically make up rock. The surface is primarily composed of
           tholeiitic basalt, although parts are more silica-rich than typical
           basalt. Source : Wikipedia -->
-          <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
+        <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
 
-          <!-- Surface Geology Content End -->
-        </div>
+        <!-- Surface Geology Content End -->
       </div>
     </div>
-    <div class="planet-science">
-      <div class="block"><span>Rotation Time</span><span>1.03 Days</span></div>
-      <div class="block">
-        <span>Revolution Time</span> <span> 1.88 Years</span>
-      </div>
-      <div class="block"><span>Radius </span><span>3,389.5 KM</span></div>
-      <div class="block"><span>Average Temp</span><span>-28°c</span></div>
+  </div>
+  <div class="planet-science">
+    <div class="block"><span>Rotation Time</span><span>1.03 Days</span></div>
+    <div class="block">
+      <span>Revolution Time</span> <span> 1.88 Years</span>
     </div>
-  </body>
+    <div class="block"><span>Radius </span><span>3,389.5 KM</span></div>
+    <div class="block"><span>Average Temp</span><span>-28°c</span></div>
+  </div>
+</body>
+
 </html>

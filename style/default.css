@@ -31,8 +31,11 @@ nav {
   height: 60px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.374);
+}
+
+nav.desktop-nav {
+  padding: 0 30px;
 }
 
 nav .title,
@@ -248,8 +251,30 @@ nav ul li a {
   }
 
   .mobile-nav {
-    padding: 40px 20px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #070625;
+    z-index: 3;
+  }
 
+  .mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.374);
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
   }
 
   .open-nav {
@@ -259,14 +284,9 @@ nav ul li a {
   }
 
   .mobile-nav-list {
-    display: block;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100vw;
     height: 100%;
-    background-color: #070625;
-    z-index: 3;
+    width: 100%;
+
   }
 
   .mobile-nav-items {
@@ -277,10 +297,10 @@ nav ul li a {
 
   .mobile-nav-items li {
     display: block;
+    width: calc(100vw - 40px);
     margin: 10px 0;
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.219);
-
   }
 
   .planet-descrip {
@@ -435,14 +455,17 @@ nav ul li a {
   .planet-science .block span:last-of-type {
     font-size: 1rem;
   }
-  li{
+
+  li {
     position: relative;
   }
-  li a{
+
+  li a {
     margin-left: 12%;
   }
-  li[data-nav-item = 'mercury']::after {
-    content:'';
+
+  li[data-nav-item='mercury']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -452,8 +475,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #419ebb;
   }
-  li[data-nav-item = 'venus']::after {
-    content:'';
+
+  li[data-nav-item='venus']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -463,8 +487,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #eda249;
   }
-  li[data-nav-item = 'earth']::after {
-    content:'';
+
+  li[data-nav-item='earth']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -474,8 +499,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #6d2ed5;
   }
-  li[data-nav-item = 'mars']::after {
-    content:'';
+
+  li[data-nav-item='mars']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -485,8 +511,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #d14c32;
   }
-  li[data-nav-item = 'jupiter']::after {
-    content:'';
+
+  li[data-nav-item='jupiter']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -496,8 +523,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #d83a34;
   }
-  li[data-nav-item = 'saturn']::after {
-    content:'';
+
+  li[data-nav-item='saturn']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -507,8 +535,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #cd5120;
   }
-  li[data-nav-item = 'uranus']::after {
-    content:'';
+
+  li[data-nav-item='uranus']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -518,8 +547,9 @@ nav ul li a {
     border-radius: 50%;
     background-color: #1ec1a2;
   }
-  li[data-nav-item = 'neptune']::after {
-    content:'';
+
+  li[data-nav-item='neptune']::after {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
