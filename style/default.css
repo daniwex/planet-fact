@@ -442,6 +442,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-top: 10%;
   }
 
   .planet-modes div:not([class^="active"]):hover {
